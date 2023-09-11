@@ -16,12 +16,438 @@
         "placeholder": "New STRIDE diagram description",
         "thumbnail": "./public/content/images/thumbnail.stride.jpg",
         "version": "2.0.5",
-        "cells": [],
+        "cells": [
+          {
+            "position": {
+              "x": 200,
+              "y": 180
+            },
+            "size": {
+              "width": 112.5,
+              "height": 60
+            },
+            "attrs": {
+              "text": {
+                "text": "user"
+              },
+              "body": {
+                "stroke": "red",
+                "strokeWidth": 2.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "actor",
+            "id": "ea28ba43-8606-4b9d-821b-89929c99b2c3",
+            "zIndex": 1,
+            "data": {
+              "type": "tm.Actor",
+              "name": "user",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "providesAuthentication": false,
+              "hasOpenThreats": true,
+              "threats": [
+                {
+                  "id": "9f4a1832-b27c-48af-add0-407a8b3b0e81",
+                  "title": "Confirmation",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Spoofing",
+                  "description": "Er is geen e-mail confirmation als je een account aanmaakt.",
+                  "mitigation": "Implementeren van confirmation ",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 15,
+                  "score": ""
+                },
+                {
+                  "id": "11343f25-f7a1-4bf7-bafb-70602409f48b",
+                  "title": "Admin",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Spoofing",
+                  "description": "Zinloze accounts kunnen niet verwijderd worden omdat er geen admin is.",
+                  "mitigation": "Maak een admin account en geef deze nodige rechten",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 16,
+                  "score": ""
+                },
+                {
+                  "id": "0262709b-d379-46fa-ab10-cf17eed434a8",
+                  "title": "Easy password",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Spoofing",
+                  "description": "Wachtwoorden hebben de mogelijkheid om makkelijk te kraken te zijn.\nWachtwoorden moeten 7 tekens hebben maar qqqqqqq is mogelijk.\n",
+                  "mitigation": "Verplichten om hoofdletters en speciale tekens in wachtwoord te hebben bij registeren.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 19,
+                  "score": ""
+                }
+              ]
+            }
+          },
+          {
+            "shape": "trust-broundary-curve",
+            "attrs": {
+              "line": {
+                "targetMarker": "",
+                "strokeDasharray": "7 5",
+                "sourceMarker": ""
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "labels": [
+              ""
+            ],
+            "data": {
+              "type": "tm.Boundary",
+              "name": "",
+              "description": "",
+              "isTrustBoundary": true,
+              "hasOpenThreats": false
+            },
+            "id": "fd0698e6-72af-4bad-a278-8e1a7f0acbcf",
+            "source": {
+              "x": 380,
+              "y": 90
+            },
+            "target": {
+              "x": 380,
+              "y": 350
+            },
+            "vertices": [
+              {
+                "x": 450,
+                "y": 210
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Data Flow",
+              "description": "",
+              "outOfScope": false,
+              "isBidirectional": false,
+              "reasonOutOfScope": "",
+              "protocol": "",
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "hasOpenThreats": false,
+              "threats": []
+            },
+            "id": "09109a25-90b7-4d34-9d19-7b05d7f41168",
+            "source": {
+              "x": 630,
+              "y": 210
+            },
+            "target": {
+              "cell": "b45443ec-9dea-4656-8c73-d20c12a651fb"
+            }
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Data Flow",
+              "description": "",
+              "outOfScope": false,
+              "isBidirectional": false,
+              "reasonOutOfScope": "",
+              "protocol": "",
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "hasOpenThreats": false,
+              "threats": []
+            },
+            "id": "79205cf9-2c20-4baf-a35d-365efdaeec5c",
+            "source": {
+              "x": 832,
+              "y": 200
+            },
+            "target": {
+              "cell": "cde673ed-4fc0-45af-a455-6b9542c9dc84"
+            }
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Data Flow",
+              "description": "",
+              "outOfScope": false,
+              "isBidirectional": false,
+              "reasonOutOfScope": "",
+              "protocol": "",
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "hasOpenThreats": false,
+              "threats": []
+            },
+            "id": "fb181fef-3e01-4c20-88e4-84a77f0cf2ce",
+            "source": {
+              "x": 313,
+              "y": 210
+            },
+            "target": {
+              "cell": "22820166-5efd-4ee1-b882-5627547cb829"
+            }
+          },
+          {
+            "position": {
+              "x": 470,
+              "y": 160
+            },
+            "size": {
+              "width": 220,
+              "height": 100
+            },
+            "attrs": {
+              "text": {
+                "text": "web server"
+              },
+              "body": {
+                "stroke": "red",
+                "strokeWidth": 2.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "process",
+            "id": "22820166-5efd-4ee1-b882-5627547cb829",
+            "zIndex": 11,
+            "data": {
+              "type": "tm.Process",
+              "name": "web server",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "privilegeLevel": "",
+              "hasOpenThreats": true,
+              "threats": [
+                {
+                  "id": "89a86005-206b-4576-b59e-d2f4b179fa13",
+                  "title": "2FA Auth",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Spoofing",
+                  "description": "Inloggen kan met email en wachtwoord zonder 2-stap verificatie ",
+                  "mitigation": "2FA Auth required",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 2,
+                  "score": ""
+                },
+                {
+                  "id": "bb9baf7e-ff38-492f-9045-ac6130ea1ec9",
+                  "title": "SSL",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Spoofing",
+                  "description": "Geen SSL (Secure Socket Layer) Certificate\nBezoekers en klanten lopen een groter risico dat hun gegevens worden gestolen",
+                  "mitigation": "Aanschaffen van certificaat en implementeren",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 14,
+                  "score": ""
+                },
+                {
+                  "id": "dfe15a56-905c-4575-9e08-61222e9fd004",
+                  "title": "Unlimited login attempts",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Denial of service",
+                  "description": "Er is geen login limiet dus je kan de login knop kapot spammen en de server het zwaar maken.",
+                  "mitigation": "X aantal logins toestaan per X aantal seconden",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 20,
+                  "score": ""
+                },
+                {
+                  "id": "c9b6f720-4ee6-4258-bac5-609c9c70f379",
+                  "title": "Unlimited notes",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Denial of service",
+                  "description": "Het is mogelijk om ongelimiteerd notes toe te voegen",
+                  "mitigation": "Limiet zetten op aantal notes maken.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 21,
+                  "score": ""
+                }
+              ],
+              "isBidirectional": null
+            }
+          },
+          {
+            "position": {
+              "x": 722,
+              "y": 160
+            },
+            "size": {
+              "width": 110,
+              "height": 100
+            },
+            "attrs": {
+              "text": {
+                "text": "app server"
+              },
+              "body": {
+                "stroke": "red",
+                "strokeWidth": 2.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "process",
+            "zIndex": 12,
+            "id": "b45443ec-9dea-4656-8c73-d20c12a651fb",
+            "data": {
+              "type": "tm.Process",
+              "name": "app server",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "privilegeLevel": "",
+              "hasOpenThreats": true,
+              "threats": [
+                {
+                  "id": "5184f70b-8651-482f-ae91-5bb5e4a4ddc4",
+                  "title": "All possible threats listed",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Denial of service",
+                  "description": "SQL injection\nCross-site scripting (XSS)\nCross-site request forgery (CSRF)\nInsecure direct object references\nRemote code execution\nInsufficient logging and monitoring\nInsecure cryptographic storage\nFailure to restrict URL access\nCross-origin resource sharing (CORS) misconfiguration\nUsing components with known vulnerabilities",
+                  "mitigation": "N/A",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 23,
+                  "score": ""
+                }
+              ]
+            }
+          },
+          {
+            "position": {
+              "x": 1027,
+              "y": 165
+            },
+            "size": {
+              "width": 120,
+              "height": 90
+            },
+            "attrs": {
+              "text": {
+                "text": "database\n"
+              },
+              "topLine": {
+                "stroke": "red",
+                "strokeWidth": 2.5,
+                "strokeDasharray": null
+              },
+              "bottomLine": {
+                "stroke": "red",
+                "strokeWidth": 2.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "store",
+            "id": "cde673ed-4fc0-45af-a455-6b9542c9dc84",
+            "zIndex": 13,
+            "data": {
+              "type": "tm.Store",
+              "name": "database\n",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "isALog": false,
+              "storesCredentials": false,
+              "isEncrypted": false,
+              "isSigned": false,
+              "hasOpenThreats": true,
+              "threats": [
+                {
+                  "id": "749373bb-a9bc-413e-80f2-ef455fdc2b6d",
+                  "title": "No protection",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Information disclosure",
+                  "description": "Er is geen bescherming",
+                  "mitigation": "CSRF protection required",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 22,
+                  "score": ""
+                }
+              ]
+            }
+          }
+        ],
         "description": "FlaskLoginSiteDiagram"
       }
     ],
     "diagramTop": 1,
     "reviewer": "Jane Doe",
-    "threatTop": 0
+    "threatTop": 23
   }
 }
